@@ -43,7 +43,7 @@ class ArticleSearcher:
         table.add_column("Link", style="magenta")
         table.add_column("Published", style="green")
         for row in results:
-            table.add_row(row.title, row.url, row.published)
+            table.add_row(*row)
         console = Console()
         console.print(table)
 
