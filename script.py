@@ -26,7 +26,6 @@ class ArticleSearcher:
         return resp.json()
 
     def get_articles_for_search_term(self, term):
-        term = term.lower()
         for row in self.data:
             title = row["title"]
             summary = row["summary"]
